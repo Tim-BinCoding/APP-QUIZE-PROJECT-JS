@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/app.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Quiz App</title>
+</head>
+<body>
+    <!-- menu bar -->
+    <div id="container">
+        <img class="logo" src="/images/New_logo-removebg-preview.png" alt="">
+        <ul>
+            <li id="quize-bar">
+            QUIZ
+            </li>
+            <li  id="create-bar">
+            CREATE
+            </li>
+        </ul>
+    </div>
+
+    <!-- body container -->
+    <div class="body_container" id="banner">
+        <div class="text_homepage">
+            <h1> <span>Hello,</span> <span class="span1">Welcome to our</span> quiz app</h1>
+            <h2>This application is developed by Group 12</h2>
+        </div>
+        <div class="banner">
+            <img src="/images/banner-quiz-removebg-preview.png" alt="">
+        </div>
+    </div>
+
+    <!-- start quiz -->
+    <div class="quiz_box" id="start_quiz">
+        <div class="quiz_header">
+            <h3>Quiz: Web-Development</h3> 
+        </div>
+        <div class="quiz_footer" id="btn-start">
+        Start
+        </div>
+    </div>
+
+    <!-- quiz-container -->
+    <div class="quiz-container" id="quiz">
+        
+        <div class="quiz-header">
+        
+            <h2 id="question">Question Text</h2>
+            <ul>
+                <li>
+                <input type="radio" name="answer" id="a" class="answer">
+                <label for="a" id="a_text">Answer</label>
+                </li>
+
+                <li>
+                <input type="radio" name="answer" id="b" class="answer">
+                <label for="b" id="b_text">Answer</label>
+                </li>
+                <li>
+                <input type="radio" name="answer" id="c" class="answer">
+                <label for="c" id="c_text">Answer</label>
+                </li>
+
+                <li>
+                <input type="radio" name="answer" id="d" class="answer">
+                <label for="d" id="d_text">Answer</label>
+                </li>
+            </ul>
+        </div>
+        <button id="submit">NEXT</button>
+  </div>
+  <input type="button" class="hide" id="viewAll-answer" value="View answer">
+  
+  <div class="viewAnswers hide" id="viewquiz">
+    <h3 class="correctAnswerAll">Correct Answer</h3>
+    <h4 class="showScore">Score: <span id="getScore">00</span><span>/</span> <span id="totalScore">00</span></h4>
+  </div>
+
+  <!-- ////////////////////// CLASS CONTIANER CREATE ANSWER ADN QUESTION //////////// -->
+
+    <div class="container-form-showQuestion">
+        <div class="form-container" id="createForm">
+            <div class="title">
+                <h1>Quiz Form</h1>
+            </div>
+            <div class="form-group">
+                <form>
+                    <div class="question">
+                        <input type="text" placeholder="Write your question" class=" form-custom" id="Que">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Answer A" class="form-control" id="a1">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Answer B" class="form-control" id="a2">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Answer C" class="form-control" id="a3">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Answer D" class="form-control" id="a4">
+                    </div>
+                    <div class="form-group">Correct Answer
+                        <select name=""  id="correct_Ans">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                        </select>
+                        
+                    </div>
+                    <div class="btn-center">
+                        <P id="btn-save" class="next">ADD+</P>
+                    </div>
+            
+                </form>
+
+            </div>
+            
+        </div>
+        <div id="cont_show_que">
+            <!-- <div class="btnDE">
+                <img src="images/delete.png" class="img_dele" id="idDele" alt="">
+                <img src="images/edite.png" class="img_edit" id="imgEdit" alt="">
+            </div> -->
+        </div>
+    </div>
+    
+    <script src="JavaScript/App.js"></script>
+</body>
+</html>
